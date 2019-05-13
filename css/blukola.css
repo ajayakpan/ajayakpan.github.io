@@ -76,6 +76,8 @@ a {
 }
 
 header{
+    /* position: fixed; */
+    /* width: 100%; */
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -150,6 +152,91 @@ header{
     background: #74b7e4;
 }
 
+/* Home page side navi */
+.site-navi {
+    display: block;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    width: 180px;
+    height: 80px;
+    margin: 20px;
+    /* border-radius: 20px; */
+    
+}
+
+.site-navi ul {
+  background: #c39b46;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    
+}
+
+.site-navi li {
+    color: #fff;
+  background: #c39b46;
+    display: block;
+    float: left;
+    margin: 0 2px 0 0;
+    padding: 12px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+  
+.site-navi li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.site-navi li:hover {
+    @include transition(background, 0.2s);
+    background: #52a6df;
+    cursor: pointer;
+}
+
+.site-navi ul li ul {
+    background: #52a6df;
+    visibility: hidden;
+    float: left;
+  min-width: 150px;
+    position: absolute;
+  transition: visibility 0.65s ease-in;
+  margin-top:12px;
+    left: 0;
+    z-index: 999;
+}
+
+.site-navi ul li:hover > ul,
+.site-navi ul li ul:hover {
+   visibility: visible;
+}
+
+.site-navi ul li ul li {
+    clear: both;
+    padding: 5px 0 5px 18px;
+  width: 100%;
+}
+
+.site-navi ul li ul li:hover {
+    background: #74b7e4;
+}
+
+/* Footer styles */
+footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(172, 164, 164);
+    color: white;
+    text-align: center;
+  }
+
 /* CSS styles for the main page items */
 .contain {
     background-color: #f8f8f8;
@@ -161,7 +248,7 @@ header{
 .left-bar {
     background-color: #c39b46;
     width: 20%;
-    height: 400vh;
+    height: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -171,7 +258,7 @@ header{
 .main-bar {
     background-color: #f8f8f8;
     width: 80%;
-    height: 400vh;
+    height: 100%
     /* display: flex; */
     flex-direction: row;
     /* animation-duration: inherit; */
@@ -181,7 +268,7 @@ header{
 #about {
     background-color:white;
     width: 900px;
-    height: 600px;
+    height: auto;;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -195,7 +282,7 @@ header{
 #contact {
     background-color:white;
     width: 900px;
-    height: 600px;
+    height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
@@ -206,23 +293,24 @@ header{
     font-size: 1.5em;
 }
 
-#service {
-    background-color: #f8f8f8;
+#services {
+    background-color:white;
     width: 900px;
-    height: 400px;
+    height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    padding-right: 10px;
     margin: 10px;
     border-radius: 8px;
-    box-shadow: solid 2px #c39b46;
+    box-shadow: solid 2px grey;
     font-size: 1.5em;
 }
 
 #sales {
     background-color:white;
     width: 900px;
-    height: 600px;
+    height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
