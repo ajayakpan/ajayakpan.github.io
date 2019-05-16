@@ -75,8 +75,8 @@ a {
 }
 
 header{
-    /* position: fixed; */
-    /* width: 100%; */
+    position: fixed;
+    width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -241,7 +241,8 @@ footer {
     background-color: #f8f8f8;
     width: 100vw;
     height: 400vh;
-    display: flex;      
+    display: flex; 
+    justify-content: center;     
 }
 
 .left-bar {
@@ -257,7 +258,8 @@ footer {
 .main-bar {
     background-color: #f8f8f8;
     width: 80%;
-    height: 100%
+    height: 100%;
+    justify-content: center;
     /* display: flex; */
     flex-direction: row;
     /* animation-duration: inherit; */
@@ -268,13 +270,14 @@ footer {
     background-color:white;
     width: 900px;
     height: auto;;
-    padding-top: 10px;
+    padding-top: 80px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 20px;
     margin: 10px;
     border-radius: 8px;
-    box-shadow: solid 2px grey;
+    box-shadow: rgb(15, 15, 15);
     font-size: 1.5em;
 }
 
@@ -289,6 +292,21 @@ footer {
     margin: 10px;
     border-radius: 8px;
     box-shadow: solid 2px grey;
+    font-size: 1.5em;
+}
+
+.zmdi-whatsapp {
+    color: green;
+    font-size: 1.5em;
+}
+
+.zmdi-twitter {
+    color: skyblue;
+    font-size: 1.5em;
+}
+
+.zmdi-instagram {
+    color: rgb(196, 29, 132);
     font-size: 1.5em;
 }
 
